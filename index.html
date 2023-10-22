@@ -1,53 +1,59 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página de exercícios</title>
+
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+
 </head>
-<body>
+<body">
 
-    <h1>Ciência das cores</h1>
+    <header>
+        <h1>Exercícios Importantes</h1>
+    </header>
 
-    <hr width="60%" align="left">
+    <section>
 
-    <div id="container-geral">
+        <div id="quadro">
+            <div id="quadro1">
+                <h2>Contagem com emoji</h2>
+                <p><label for="lblInicio">Início:</label>
+                <input type="number" name="txNumInicio" id="txNumInicio" value="0"></p>
 
-        <div id="container-infos">
-            <p>Nome: <input type="text" name="cp-tex-name" id="cp-tex-name"></p>
-            <p>Sobrenome: <input type="text" name="cp-tex-sobrenome" id="cp-tex-sobrenome"> </p>
-            <p>Data de nascimento: <input type="date" name="cp-dat-nascimento" id="cp-dat-nascimento"></p>
-            <p><button id="btn-enviar" onclick="exercicios.input_dados()">Enviar</button></p>
+                <p><label for="lblFim">Fim:</label>
+                <input type="number" name="txNumFim" id="txNumFim" value="1"> </p>   
+                
+                <p><label for="lblPasso">Passo:</label>
+                <input type="number" name="txNumPasso" id="txNumPasso" value="1"></p>
 
+                <p><button id="btnContar" name="btnContar" onclick="contagem()">Contar</button></p>
+                <div id="resContagem1"></div> 
+                
+            </div>
+                
+    
+            </div>
         </div>
-
-        <hr width="60%" align="left">
-
-        <div id="container-resultado">
-            Painel de resultados
-
-        </div>
+    </section>
 
 
-    </div>
+    ...
+    <footer>
+        <p>&copy; Auridebson Sousa, 2023</p>
+    </footer>
 
+    <script>
 
 
 
 
+    </script>
 
 
-
-
-
-
-
-
-
-
-
+    
 </body>
 </html>
